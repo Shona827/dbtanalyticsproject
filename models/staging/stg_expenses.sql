@@ -11,7 +11,6 @@ WITH ranked_claims AS (
         ROW_NUMBER() OVER (PARTITION BY claim_id ORDER BY claim_date DESC) AS rn
     FROM RAW.PUBLIC.EXPENSE_CLAIMS
 )
-
 SELECT
     claim_id,
     employee_id,
