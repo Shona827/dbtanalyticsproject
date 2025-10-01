@@ -41,7 +41,7 @@ models:
     example:
       +materialized: table
       
-  staging:
+    staging:
      +database: DEMO_DB
      +schema: staging
      +materialized: table     
